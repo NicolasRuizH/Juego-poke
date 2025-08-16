@@ -219,10 +219,15 @@ a {
 }
 .home__subtitle, .home__description{
   text-align: center;
+  justify-self: center;
 }
 
 /* contenedor-boton */
-
+.boton__entrar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .tarjeta{
   height: 40px;
   width: 90px;
@@ -236,7 +241,6 @@ a {
   justify-self: center;
   align-items: center;
   justify-content: center;
-
 }
 
 .tarjeta::before{
