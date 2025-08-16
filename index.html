@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JUEGO Pokemon</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- scroll -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+  <!-- swipper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!--HEADER-->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo"> POKEMON </a>
+      <div class="nav__menu" id="nav-menu">
+        <div class="icono__nav" id="icono-nav"><img src="./assets/Img-home/pngwing.com.png" alt=""></div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#character" class="nav__link">Characters</a>
+          </li>
+          <li class="nav__item">
+            <a href="#play-juego" class="nav__link">Play now</a>
+          </li>
+          <li class="nav__item">
+            <a href="#memory-game" class="nav__link">PokeMory</a>
+          </li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class='bx bx-x'></i>
+        </div>
+      </div>
+      <!--TOGGLE-->
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-grid-alt'></i>
+      </div>
+    </nav>
+  </header>
+  <!--MAIN-->
+  <main class="main">
+    <!--HOME-->
+    <section class="home">
+      <div class="home__container container">
+        <div class="home__data">
+          <span class="home__subtitle">Ash Ketchum</span>
+          <h1 class="home__title">Jugamos?</h1>
+          <p class="home__description">
+            Listo para comenzar
+          </p>
+          <div class="boton__entrar">
+            <div class="tarjeta">
+              <a href="#character" class="tarjeta-button">Entrenar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/Img-home/four-members.png" class="team__img"></div>
+            <div class="swiper-slide"><img src="./assets/Img-home/charmander.png" class="charmander__img"></div>
+            <div class="swiper-slide"><img src="./assets/Img-home/pikachu-pokemon.png" class="pikachu__img"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Api -->
+    <article class="api-pokemon" id="character">
+      <div class="nav__api" id="reset">
+        <ul class="nav__list-api">
+          <li class="nav-item-api"><button class="btn btn-header" id="ver-todos">Ver todos</button></li>
+          <li class="nav-item-api"><button class="btn btn-header normal" id="normal">Normal</button></li>
+          <li class="nav-item-api"><button class="btn btn-header fire" id="fire">Fire</button></li>
+          <li class="nav-item-api"><button class="btn btn-header water" id="water">Water</button></li>
+          <li class="nav-item-api"><button class="btn btn-header grass" id="grass">Grass</button></li>
+          <li class="nav-item-api"><button class="btn btn-header electric" id="electric">Electric</button></li>
+          <li class="nav-item-api"><button class="btn btn-header ice" id="ice">Ice</button></li>
+          <li class="nav-item-api"><button class="btn btn-header fighting" id="fighting">Fighting</button></li>
+          <li class="nav-item-api"><button class="btn btn-header bug" id="bug">Bug</button></li>
+          <li class="nav-item-api"><button class="btn btn-header poison" id="poison">Poison</button></li>
+          <li class="nav-item-api"><button class="btn btn-header ground" id="ground">Ground</button></li>
+          <li class="nav-item-api"><button class="btn btn-header flying" id="flying">Flying</button></li>
+          <li class="nav-item-api"><button class="btn btn-header psychic" id="psychic">Psychic</button></li>
+          <li class="nav-item-api"><button class="btn btn-header rock" id="rock">Rock</button></li>
+          <li class="nav-item-api"><button class="btn btn-header ghost" id="ghost">Ghost</button></li>
+          <li class="nav-item-api"><button class="btn btn-header dragon" id="dragon">Dragon</button></li>
+          <li class="nav-item-api"><button class="btn btn-header steel" id="steel">Steel</button></li>
+          <li class="nav-item-api"><button class="btn btn-header fairy" id="fairy">Fairy</button></li>
+        </ul>
+      </div>
+    </article>
+
+    <div id="todos">
+      <div class="pokemon-todos" id="listaPokemon">
+      </div>
+    </div>
+
+    <!-- pelea pokemos -->
+    <div class="peleas" id="play-juego">
+      <div class="peleas__title">
+        <h1>Quien crees que va a ganar?</h1>
+      </div>
+      <div class="pelea__box">
+        <div class="pokemon__ch">
+          <div class="pokemon__1"></div>
+          <div class="pokemon__ch-numb">
+            <h4>elegir: </h4>
+            <button class="number-1">1</button>
+          </div>
+        </div>
+        <div class="texto__medio">
+          <h1>VS</h1>
+          <h4>estas listo?</h4>
+        </div>
+        <div class="pokemon__ch">
+          <div class="pokemon__2"></div>
+          <div class="pokemon__ch-numb">
+            <h4>elegir: </h4>
+            <button class="number-2">2</button>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="resultado__final">
+        <div class="resultado__pregunta">
+          <h4>elije entre 1 y 2</h4>
+        </div>
+        <div class="reset-boton">
+          <div class="btn-reset">
+            <button id="#reset" class="reset-total"> <a href="#reset">volver a jugar </a></button>
+          </div>
+        </div>
+        <div class="texto-resultado">
+          <h2 style="color: aliceblue"></h2>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Memory Game -->
+    <div class="memory-game-box" id="memory-game">
+      <div class="game-container">
+        <h1>PokeMemory</h1>
+        <div id="grid" class="grid"></div>
+        <div id="message"></div>
+        <div id="win-message"></div>
+        <div class="reset-memory-box">
+          <button id="reset__memory-game">jugar de nuevo</button>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="./javascript/main.js"></script>
+</body>
+
+</html>
