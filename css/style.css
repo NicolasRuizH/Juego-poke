@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
 }
+html {
+  color-scheme: light; /* asegura que el navegador use modo claro */
+}
 :root {
   --header-height: 3.5rem;
   --body-color: linear-gradient(90deg, hsl(34, 62%, 63%) 0%, hsl(9, 92%, 54%) 100%);
@@ -71,7 +74,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 500;
-  color: var(--text-color);
+  color: var(--text-color)!important;
   background: var(--body-color)!important;
 }
 
