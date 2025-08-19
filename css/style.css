@@ -5,7 +5,7 @@
 }
 :root {
   --header-height: 3.5rem;
-  --body-color: linear-gradient(90deg, hsl(34, 62%, 63%) 0%, hsl(9, 92%, 54%)100%);
+  --body-color: linear-gradient(90deg, hsl(34, 62%, 63%) 0%, hsl(9, 92%, 54%)100%) !important;
   --first-color: hsl(34, 62%, 63%);
   --text-color: hsl(38, 8%, 8%);
   --body-font: "Space Grotesk", sans-serif;
@@ -487,7 +487,7 @@ object-fit: contain; /* Evita distorsión y asegura que la imagen se ajuste al c
 .api-pokemon {
   padding-block: 1rem;
   box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .5);
-  background-color: var(--clr-gray);
+  background-color: var(--clr-gray) !important;
   font-family: "Space Grotesk", sans-serif;
 }
 .nav__api {
