@@ -5,7 +5,7 @@
 }
 :root {
   --header-height: 3.5rem;
-  --body-color: linear-gradient(90deg, hsl(34, 62%, 63%) 0%, hsl(9, 92%, 54%)100%) !important;
+  --body-color: linear-gradient(90deg, hsl(34, 62%, 63%) 0%, hsl(9, 92%, 54%)100%);
   --first-color: hsl(34, 62%, 63%);
   --text-color: hsl(38, 8%, 8%);
   --body-font: "Space Grotesk", sans-serif;
@@ -72,7 +72,7 @@ body {
   font-size: var(--normal-font-size);
   font-weight: 500;
   color: var(--text-color);
-  background: var(--body-color);
+  background: var(--body-color)!important;
 }
 
 ul {
