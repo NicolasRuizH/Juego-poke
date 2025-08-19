@@ -5,7 +5,7 @@
 }
 :root {
   --header-height: 3.5rem;
-  --body-color: linear-gradient(90deg, hsl(34, 62%, 63%) 0%, hsl(9, 92%, 54%)100%);
+  --body-color: linear-gradient(90deg, hsl(34, 62%, 63%) 0%, hsl(9, 92%, 54%) 100%);
   --first-color: hsl(34, 62%, 63%);
   --text-color: hsl(38, 8%, 8%);
   --body-font: "Space Grotesk", sans-serif;
@@ -1116,5 +1116,12 @@ height: 2rem;
     color:var(--clr-white);
     text-shadow:2px 2px 5px #1c1c1c ;
     animation: agrandarCArd 2s infinite;
+  }
+}
+
+/* para que se vea en modo claro */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--body-color) !important;
   }
 }
